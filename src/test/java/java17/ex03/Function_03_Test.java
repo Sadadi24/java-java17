@@ -17,7 +17,14 @@ public class Function_03_Test {
     // TODO l'enfant possède le prenom "<PRENOM_PERE> <PRENOM_MERE>"
     // TODO l'age de l'enfant est 0
     // TODO le mot de passe de l'enfant est null
-    BinaryOperator<Person> makeAChild = null;
+    BinaryOperator<Person> makeAChild = new BinaryOperator<Person>() {
+		
+		@Override
+		public Person apply(Person t, Person u) {
+			// TODO Auto-generated method stub
+			return null; //new Person(t.getFirstname()+" "+ u.getFirstname()+" "+ t.getFirstname()+ 2);
+		}
+	};
     //  end::makeAChild[]
 
 
